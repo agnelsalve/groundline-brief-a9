@@ -2,15 +2,15 @@
 
 A one-page site that covers every required section (Hero, 3 products, About, Contact, responsive), built from the A8 wireframes. Extra pages are optional at the end.
 
-## Before you paste anything
+## Contact details (already filled into Prompt 1)
 
-Fill in these three values in **Prompt 1** (search for `<<`):
-
-| Token | What to put |
+| Field | Value |
 |---|---|
-| `<<CONTACT_EMAIL>>` | An email you actually read. Don't use hello@groundlinebrief.com unless you own the domain and that inbox works. |
-| `<<LINKEDIN_URL>>` | Your LinkedIn profile URL |
-| `<<GITHUB_URL>>` | Your GitHub profile URL |
+| Email | salve.a@northeastern.edu |
+| LinkedIn | https://www.linkedin.com/in/agnelsalve/ |
+| GitHub | https://github.com/agnelsalve |
+
+Prompt 1 is ready to paste as-is.
 
 ## How to run it
 
@@ -157,8 +157,8 @@ PAGE STRUCTURE (single page, anchor links, smooth scroll)
    Fields: Name* · Work email* (inline validation on blur; errors in red text WITH an icon, never color alone; keep user input on error) · Company · Your role · "Paste last week's brief or a link (optional)" textarea · "Rivals you track" (placeholder "e.g. Larkspur, Tessellate").
    Submit button (plum, full width on mobile): "Send it, we'll reply in 1 business day". Shows a progress state while sending.
    Privacy line under the button (muted, 14px): "We read your brief once to audit it, then delete it. No sales sequence."
-   Form handling: put a constant FORM_ENDPOINT = "" at the top of the component. If it is set, POST the form as JSON to it. If it is empty, open a mailto: link to <<CONTACT_EMAIL>> with the subject "Groundline Brief: " + intent and the fields in the body. Success state: "Got it. Your audit lands within one business day." with a link "While you wait, read the sample brief →" (#sample).
-   Sidebar: "Elsewhere" — email <<CONTACT_EMAIL>> (mailto link), LinkedIn (<<LINKEDIN_URL>>), GitHub (<<GITHUB_URL>>), "Live demo: groundline.streamlit.app" (https://groundline.streamlit.app). Then "What happens next": 1 We run your brief through the checker · 2 You get the marked-up copy + cut log · 3 No follow-up unless you reply.
+   Form handling: put a constant FORM_ENDPOINT = "" at the top of the component. If it is set, POST the form as JSON to it. If it is empty, open a mailto: link to salve.a@northeastern.edu with the subject "Groundline Brief: " + intent and the fields in the body. Success state: "Got it. Your audit lands within one business day." with a link "While you wait, read the sample brief →" (#sample).
+   Sidebar: "Elsewhere" — email salve.a@northeastern.edu (mailto link), LinkedIn (https://www.linkedin.com/in/agnelsalve/), GitHub (https://github.com/agnelsalve), "Live demo: groundline.streamlit.app" (https://groundline.streamlit.app). Then "What happens next": 1 We run your brief through the checker · 2 You get the marked-up copy + cut log · 3 No follow-up unless you reply.
 
 10. FINAL CTA BAND
     Full-width ink (#16141A) band, paper text. Newsreader H2: "Paste last week's brief. We'll show you what we'd cut." Button: since plum on ink fails contrast, use a paper-filled button with ink text "Get a free audit" → #contact. Links on ink use lilac #C9B3D9.
