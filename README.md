@@ -8,7 +8,7 @@ This assignment turns the Groundline Brief identity from Assignment 8 into a liv
 
 | Folder | Deliverable | Points | Status |
 |---|---|---|---|
-| [`website/`](website/) | Live website (Vercel v0): hero, 3+ products, about, contact, responsive | 25 | ☐ |
+| [`website/`](website/) | Live website (Vercel v0): hero, 3+ products, about, contact, responsive. Prompts: [`V0-PROMPTS.md`](website/V0-PROMPTS.md) · Live URL: _tbd_ | 25 | ☐ |
 | [`accessibility/`](accessibility/) | WebAIM contrast screenshots → PDF | 5 | ☐ |
 | [`linkedin-header/`](linkedin-header/) | 1584 × 396 header → PDF | 10 | ☐ |
 | [`brand-visuals/`](brand-visuals/) | 3 AI-generated brand images → PDF | 10 | ☐ |
