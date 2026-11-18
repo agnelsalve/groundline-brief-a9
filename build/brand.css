@@ -1,0 +1,9 @@
+@import url("fonts/fonts.css");
+:root{--ink:#16141A;--plum:#5B3A70;--paper:#FAF8F4;--tint:#EFE8F3;--lilac:#C9B3D9;--muted:#5B5862;--line:#DCD9E0;--green:#1F7A4D;--gtint:#E3F2EA;--amber:#B45309;--red:#B42318}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",Arial,sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.serif{font-family:"Newsreader",Georgia,serif}
+.mono{font-family:"IBM Plex Mono",Consolas,monospace}
+.eyebrow{font:600 9pt "IBM Plex Sans";letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.rule{height:3px;background:var(--ink)}
+.brief{color:var(--plum);font-style:italic;font-weight:400}

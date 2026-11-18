@@ -1,0 +1,105 @@
+{
+  "name": "Agnel Salve",
+  "title": "AI Engineer | Data Engineer | LLM Systems & Verification",
+  "contact": {
+    "location": "Boston, MA",
+    "phone": "(857) 423-8028",
+    "email": "salve.a@northeastern.edu",
+    "linkedin": "linkedin.com/in/agnelsalve",
+    "github": "github.com/agnelsalve",
+    "demo": "groundline.streamlit.app"
+  },
+  "summary": "AI and data engineer with 3+ years building pipelines whose numbers go straight to executives, now focused on LLM systems you can verify. Founder of Groundline Brief, where a second model fact-checks every sentence the first one writes.",
+  "skills": [
+    [
+      "Generative AI",
+      "LLMs, RAG, LangChain, LangGraph, MCP servers, multi-agent systems, LLM evaluation, prompt engineering, Transformers (GPT, T5, BERT), Hugging Face, Ollama, Pinecone, ChromaDB, n8n, Claude Code"
+    ],
+    [
+      "Languages & Databases",
+      "Python, SQL, TypeScript, R, Go, PostgreSQL, MS SQL, Oracle, MongoDB, Neo4j, NoSQL"
+    ],
+    [
+      "Data Engineering",
+      "Spark, Hadoop, Kafka, Spark Streaming, Hive, Airflow, Snowflake, Redshift, Talend, Dask, ETL/ELT, CI/CD"
+    ],
+    [
+      "Machine Learning",
+      "PyTorch, TensorFlow, scikit-learn, XGBoost, SHAP, Pandas, NumPy, anomaly detection, time-series forecasting, NLP, YOLOv8, OpenCV"
+    ],
+    [
+      "Cloud & Tools",
+      "AWS (S3, Glue, Redshift, SageMaker, Lambda, EC2, RDS), Azure (Data Factory, Synapse, AML, Functions, ADLS Gen2), GCP Cloud Run, Docker, Kubernetes, Redis, FastAPI, Django, React, Next.js, Power BI, Tableau, Datadog, Git"
+    ]
+  ],
+  "experience": [
+    {
+      "role": "AI Engineer",
+      "org": "Probus Insurance Broker Pvt. Ltd.",
+      "place": "Mumbai, India",
+      "dates": "Mar 2024 – Jul 2025",
+      "bullets": [
+        "Owned claims fraud detection end to end after payout-stage leakage went undetected: trained XGBoost with SMOTE rebalancing and TF-IDF over adjuster notes, engineering claim-to-premium and report-delay signals to reach 92% ROC-AUC and 85% precision.",
+        "Rebuilt ML feature pipelines across 15+ on-prem sources as parameterized CTEs in Python and MS SQL with automated refreshes, cutting runtime 70% and making training and scoring datasets reproducible.",
+        "Architected the firm's first cloud ML data platform on AWS (S3, Glue, Redshift), designing multi-source connectors and orchestration that moved data freshness from T+2 to near real time.",
+        "Served as senior technical owner of the ML function without a dedicated MLOps team: defined drift and threshold reviews with claims operations, documented model assumptions and retraining cadence, and set review standards."
+      ]
+    },
+    {
+      "role": "Software Development Engineer I",
+      "org": "Jio Platforms (Reliance Industries)",
+      "place": "Mumbai, India",
+      "dates": "Jul 2022 – Mar 2024",
+      "bullets": [
+        "Stabilized 1 TB+ daily distributed workloads on Hadoop, Spark and Kafka by tuning job configurations, reworking partitioning and introducing CI/CD through Azure DevOps, improving pipeline stability 30%.",
+        "Engineered real-time streaming feature computation with Kafka, Spark Streaming and HiveQL serving views, closing a one-day reporting lag and processing metrics 45% faster for 200+ business users.",
+        "Standardized 50+ reusable metric definitions in SQL and HiveQL, an early feature-store pattern that cut downstream query time 40% and eliminated duplicate logic across domains.",
+        "Led the 5G infrastructure analytics workstream as delivery point of contact: modeled source data, built business KPIs in Python and HQL, shipped 2 production use cases and ran user acceptance testing."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Groundline Brief, founder",
+      "stack": "n8n, Google Gemini (3 models), Python, Streamlit",
+      "dates": "2026 – Present",
+      "bullets": [
+        "Built a multi-model LLM pipeline that writes weekly competitor briefs and sends every claim to a different checker model; unsupported claims are removed and logged, and briefs under 85% grounded are flagged for human review.",
+        "Ingested 496 items from 17 feeds (news, Reddit, arXiv, Hacker News), validated and de-duplicated them to 294 records, and added an LLM relevance gate that rejected 49 of 66 off-topic results in one competitor run.",
+        "Computed every number in code rather than by the model, reaching 97% groundedness on a live brief at $0.089 per run; load-tested from 1 to 2,000 requests and validated with 3 product-marketing user tests."
+      ]
+    },
+    {
+      "name": "Multi-Agent AI System for Investor Intelligence",
+      "stack": "LangGraph, MCP, FastAPI, GCP Cloud Run, Pinecone",
+      "dates": "",
+      "bullets": [
+        "Orchestrated parallel and sequential LangGraph agents (Gemini 2.0 Flash, MCP server for Google Custom Search) for pitch-deck summarization and market research, served by a FastAPI backend on GCP Cloud Run with CI/CD and Pinecone vector search over Snowflake data."
+      ]
+    },
+    {
+      "name": "Email RAG System, Local Knowledge Assistant",
+      "stack": "LangChain, Ollama (Llama 3.2), ChromaDB, Gmail API",
+      "dates": "",
+      "bullets": [
+        "Built a fully local RAG pipeline over Gmail (OAuth) with MiniLM embeddings in ChromaDB: sub-100 ms retrieval, 2–5 s generation, multi-user isolation and zero data leaving the machine."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Information Systems",
+      "org": "Northeastern University",
+      "place": "Boston, MA",
+      "dates": "Expected Dec 2027",
+      "note": "Coursework: Program Structure & Algorithms; Data Science Engineering Methods & Tools; AI Generative Modeling"
+    },
+    {
+      "degree": "Bachelor of Engineering in Computer Engineering",
+      "org": "University of Mumbai",
+      "place": "Mumbai, India",
+      "dates": "Jul 2018 – Aug 2022",
+      "note": ""
+    }
+  ]
+}
