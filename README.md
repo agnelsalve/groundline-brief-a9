@@ -25,7 +25,7 @@ python build/linkedin.py && python build/render.py build/linkedin.html linkedin-
 python build/resume_ats.py          # ATS PDF (content: build/resume_content.json)
 node build/resume_docx.js           # ATS Word (needs the docx npm package)
 python build/resume_visual.py       # visual resume
-python build/brand_visuals.py "ChatGPT"   # after adding brand-visuals/visual-1..3
+python build/brand_visuals.py "Adobe Firefly"   # after adding brand-visuals/visual-1..3
 ```
 
 ## Brand tokens (from Assignment 8)
