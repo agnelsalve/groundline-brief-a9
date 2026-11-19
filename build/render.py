@@ -3,8 +3,32 @@ import sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 src, out = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
+
+
+def edge_cli_pdf():
+    """Fallback when Playwright can't launch Edge: Edge's own headless print."""
+    import os, subprocess, tempfile
+    edge = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+    prof = os.path.join(tempfile.gettempdir(), "edge-pdf-prof")
+    subprocess.run([edge, "--headless", "--disable-gpu", "--no-pdf-header-footer", f"--user-data-dir={prof}",
+                    "--virtual-time-budget=5000", f"--print-to-pdf={out}", src.as_uri()], check=True, timeout=120)
+
+
+if out.suffix == ".pdf":
+    try:
+        import playwright  # noqa: F401
+        with sync_playwright() as _p:
+            _p.chromium.launch(channel="msedge").close()
+    except Exception:
+        edge_cli_pdf()
+        print("wrote", out, "(edge cli)")
+        sys.exit(0)
+
 with sync_playwright() as p:
-    b = p.chromium.launch(channel="msedge")
+    try:
+        b = p.chromium.launch(channel="msedge")
+    except Exception:
+        b = p.chromium.launch()
     if out.suffix == ".pdf":
         pg = b.new_page(); pg.goto(src.as_uri(), wait_until="networkidle"); pg.evaluate("document.fonts.ready")
         pg.wait_for_timeout(400)

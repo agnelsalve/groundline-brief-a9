@@ -11,7 +11,7 @@ This assignment turns the Groundline Brief identity from Assignment 8 into a liv
 | [`website/`](website/) | Live website (Vercel v0). Prompts: [`V0-PROMPTS.md`](website/V0-PROMPTS.md) · Live URL: _tbd_ | 25 | In progress (Agnel) |
 | [`accessibility/`](accessibility/) | [`Salve_Agnel_A9_ColorAccessibility.pdf`](accessibility/Salve_Agnel_A9_ColorAccessibility.pdf): 15 WebAIM screenshots | 5 | Done |
 | [`linkedin-header/`](linkedin-header/) | [`Salve_Agnel_A9_LinkedInHeader.pdf`](linkedin-header/Salve_Agnel_A9_LinkedInHeader.pdf) + 1584×396 PNG | 10 | Done |
-| [`brand-visuals/`](brand-visuals/) | 3 AI images → PDF. Prompts: [`IMAGE-PROMPTS.md`](brand-visuals/IMAGE-PROMPTS.md) | 10 | Needs images |
+| [`brand-visuals/`](brand-visuals/) | [`Salve_Agnel_A9_BrandVisuals.pdf`](brand-visuals/Salve_Agnel_A9_BrandVisuals.pdf). Prompts: [`IMAGE-PROMPTS.md`](brand-visuals/IMAGE-PROMPTS.md) | 10 | Done |
 | [`resumes/ats/`](resumes/ats/) | `Agnel_Salve_Resume_ATS.pdf` + `.docx` | 15 | Done |
 | [`resumes/visual/`](resumes/visual/) | `Agnel_Salve_Resume_Visual.pdf` | 15 | Done |
 

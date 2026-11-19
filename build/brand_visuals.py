@@ -21,6 +21,8 @@ INFO = [
      "The trust score as a feeling: balanced, settled, nothing to fix. The spirit level is the ground line made physical."),
 ]
 
+POS = ["center", "center", "78% center"]  # visual 3 is wide: keep the level in frame
+HERO = ["", "", "height:auto;margin:.4in 0 .5in"]  # show the wide image uncropped
 imgs = []
 for i in (1, 2, 3):
     f = next((D / f"visual-{i}.{e}" for e in ("png", "jpg", "jpeg", "webp") if (D / f"visual-{i}.{e}").exists()), None)
@@ -32,12 +34,12 @@ pages = ""
 for i, (img, (t, use, why), pr) in enumerate(zip(imgs, INFO, prompts), 1):
     short = pr.split(" Documentary editorial photograph")[0]
     pages += f'''<section class="pg"><div class="rule"></div><div class="eyebrow" style="margin-top:6px">Brand visual {i} of 3 · {use}</div>
-<h2>{t}</h2><img class="hero" src="../brand-visuals/{img.name}">
+<h2>{t}</h2><img class="hero" style="object-position:{POS[i-1]};{HERO[i-1]}" src="../brand-visuals/{img.name}">
 <div class="cols"><div><h4>Why it belongs</h4><p>{why}</p></div>
 <div><h4>Prompt ({tool})</h4><p class="pr">{short} <span class="m">+ shared style block</span></p></div></div>
 <div class="foot"><span>Agnel Salve · Groundline Brief · A9</span><span>{i + 1} / 4</span></div></section>'''
 
-thumbs = "".join(f'<img src="../brand-visuals/{p.name}">' for p in imgs)
+thumbs = "".join(f'<img style="object-position:{POS[k]}" src="../brand-visuals/{p.name}">' for k, p in enumerate(imgs))
 html = f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="brand.css"><style>
 @page{{size:11in 8.5in;margin:0}}
 .pg{{width:11in;height:8.5in;padding:.5in .65in;position:relative;overflow:hidden;page-break-after:always}}
