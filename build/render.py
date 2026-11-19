@@ -9,9 +9,9 @@ def edge_cli_pdf():
     """Fallback when Playwright can't launch Edge: Edge's own headless print."""
     import os, subprocess, tempfile
     edge = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
-    prof = os.path.join(tempfile.gettempdir(), "edge-pdf-prof")
+    prof = tempfile.mkdtemp(prefix="edge-pdf-")  # fresh profile: no cached page
     subprocess.run([edge, "--headless", "--disable-gpu", "--no-pdf-header-footer", f"--user-data-dir={prof}",
-                    "--virtual-time-budget=5000", f"--print-to-pdf={out}", src.as_uri()], check=True, timeout=120)
+                    "--virtual-time-budget=5000", f"--print-to-pdf={out}", src.as_uri() + "?v=" + str(os.getpid())], check=True, timeout=120)
 
 
 if out.suffix == ".pdf":
