@@ -8,7 +8,7 @@ This assignment turns the Groundline Brief identity from Assignment 8 into a liv
 
 | Folder | Deliverable | Points | Status |
 |---|---|---|---|
-| [`website/`](website/) | Live website (Vercel v0). Prompts: [`V0-PROMPTS.md`](website/V0-PROMPTS.md) · Live URL: _tbd_ | 25 | In progress (Agnel) |
+| [`website/`](website/) | Live website (Vercel v0). Prompts: [`V0-PROMPTS.md`](website/V0-PROMPTS.md) · **Live: [groundline-ten.vercel.app](https://groundline-ten.vercel.app/)** | 25 | Live (v1) |
 | [`accessibility/`](accessibility/) | [`Salve_Agnel_A9_ColorAccessibility.pdf`](accessibility/Salve_Agnel_A9_ColorAccessibility.pdf): 15 WebAIM screenshots | 5 | Done |
 | [`linkedin-header/`](linkedin-header/) | [`Salve_Agnel_A9_LinkedInHeader.pdf`](linkedin-header/Salve_Agnel_A9_LinkedInHeader.pdf) + 1584×396 PNG | 10 | Done |
 | [`brand-visuals/`](brand-visuals/) | [`Salve_Agnel_A9_BrandVisuals.pdf`](brand-visuals/Salve_Agnel_A9_BrandVisuals.pdf). Prompts: [`IMAGE-PROMPTS.md`](brand-visuals/IMAGE-PROMPTS.md) | 10 | Done |
