@@ -115,7 +115,7 @@ ul{{margin-left:12px}} li{{margin-bottom:1.5px}} li::marker{{color:var(--plum)}}
       <div><span class="ct2">Leads the market</span></div></div></div>
   <h2>Experience</h2>{jobs}
   <h2>More projects</h2><div class="pjs">{projects}</div>
-  <div class="foot"><span>Agnel Salve · AI &amp; Data Engineer</span><span>Full detail: ATS resume and github.com/agnelsalve</span></div>
+  <div class="foot"><span>Agnel Salve · AI &amp; Data Engineer</span><span>agnelsalve.github.io</span></div>
 </main></body></html>'''
 (ROOT / "build" / "resume_visual.html").write_text(html, encoding="utf-8")
 subprocess.run([sys.executable, str(ROOT / "build" / "render.py"), str(ROOT / "build" / "resume_visual.html"),
